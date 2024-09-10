@@ -9,7 +9,7 @@ import Detail from './Components/Detail.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-  <BrowserRouter>
+  <BrowserRouter basename='/ShoppingCart/'>
     <Routes>
       <Route path='/' element={<App />} />
       <Route path='/:title' element={<Detail/>} />
